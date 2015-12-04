@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE FeedFlareUnit SYSTEM "http://samincube.com/c.php?x=777">
+<FeedFlareUnit>
+  <Catalog>
+    <Title>Kick it</Title>
+    <Description>Kick this story on dotnetkicks.com</Description>
+  </Catalog>
+  <FeedFlare>
+    <Text>Kick it</Text>
+    <Link href="http://www.dotnetkicks.com/kick/?url=${link}" />
+  </FeedFlare>
+</FeedFlareUnit>
