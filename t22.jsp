@@ -17,7 +17,7 @@ DataInputStream dis = new DataInputStream(in);
 
 String disr = dis.readLine();
 while (disr != null) {
-	res = res + disr; 
+	res = res + disr + "\n"; 
 	disr = dis.readLine(); 
 }
 
