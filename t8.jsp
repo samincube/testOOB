@@ -5,12 +5,8 @@
 
 String result = "";
 p = Runtime.getRuntime().exec("id");
-OutputStream os = p.getOutputStream();
-InputStream in = p.getInputStream();
-DataInputStream dis = new DataInputStream(in);
-result = dis.readLine();
 
-pageContext.setAttribute("result", result);
+pageContext.setAttribute("result", p);
 
 %>
 
