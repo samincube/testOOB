@@ -14,7 +14,12 @@ Process p = Runtime.getRuntime().exec(exe);
 OutputStream os = p.getOutputStream();
 InputStream in = p.getInputStream();
 DataInputStream dis = new DataInputStream(in);
-res = dis.readLine();
+
+String disr = dis.readLine();
+while (disr != null) {
+	res = res + disr; 
+	disr = dis.readLine(); 
+}
 
 pageContext.setAttribute("result", res);
 
