@@ -4,6 +4,6 @@
 
 <%!
 
-out.println("Print something");
+System.out.println("Print something");
 
 %>
