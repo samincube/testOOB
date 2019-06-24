@@ -5,10 +5,14 @@
 
 String result = "";
 Process p = Runtime.getRuntime().exec("id");
+OutputStream os = p.getOutputStream();
+InputStream in = p.getInputStream();
+DataInputStream dis = new DataInputStream(in);
+String res = dis.readLine();
 
-pageContext.setAttribute("result", p);
+pageContext.setAttribute("result", res);
 
 %>
 
-T9:
+T10:
 <c:out value="${result}"/>
