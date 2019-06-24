@@ -4,10 +4,11 @@
 <%
 
 String result = "";
-p = Runtime.getRuntime().exec("id");
+Process p = Runtime.getRuntime().exec("id");
 
 pageContext.setAttribute("result", p);
 
 %>
 
+T9:
 <c:out value="${result}"/>
